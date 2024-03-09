@@ -7,8 +7,8 @@ plugins {
 
 sourceCompatibility = JavaVersion.VERSION_11
 
-group 'io.flowsquad.blog'
-version '1.0.0'
+group 'com.example'
+version '1.0.1'
 
 repositories {
     mavenCentral()
@@ -26,12 +26,12 @@ publishing {
             name = "GitHubPackages"
             // Die URL des Repositories, in dem die Artefakte veröffentlicht werden sollen
             // The url of the repository, where the artifacts will be published
-            url = "https://maven.pkg.github.com/FlowSquad/devops-github-packages"
+            url = "https://maven.pkg.github.com/dudutou/devops-github-packages"
             credentials {
                 // Die Zugangsdaten (weiter unten beschrieben)
                 // The credentials (described in the next section)
-                username = project.findProperty("gpr.user")
-                password = project.findProperty("gpr.key")
+                username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
+                password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
             }
         }
     }
