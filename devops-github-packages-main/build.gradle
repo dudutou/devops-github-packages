@@ -1,10 +1,17 @@
 plugins {
     id 'java'
+    id 'application'
+}
+ext {
+   javaMainClass = "io.flowsquad.blog.devops.github.packages.main.MainClass"
+}
+application {
+    mainClassName = javaMainClass
 }
 
 sourceCompatibility = JavaVersion.VERSION_11
 
-group 'io.flowsquad.blog'
+group 'com.example'
 version '1.0.0'
 
 repositories {
@@ -28,5 +35,5 @@ repositories {
 dependencies {
     // Die Referenz auf das veröffentlichte Library-Artefakt
     // The reference to our published library artifact
-    implementation "io.flowsquad.blog:devops-github-packages-library:1.0.0"
+    implementation "com.example:devops-github-packages-library:1.0.0"
 }
