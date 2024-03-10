@@ -5,6 +5,9 @@ This repository is part of the blog post series DevOps with GitHub. We'll take a
 # publish it to GitHub
 - `./gradlew :devops-github-packages-library:publish`
 
+# use library download from GitHub packages
+- `./gradlew :devops-github-packages-main:run`
+
 See the full post here:\
 https://medium.com/@flowsquad/devops-with-github-part-1-github-packages-with-gradle-c4253cdf7ca6?source=friends_link&sk=4f01340ca6040f4d34ea4da1623eb097
 
