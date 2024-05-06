@@ -15,4 +15,4 @@ Or see the German translation:\
 https://www.flowsquad.io/blog/2020-05-29-devops-mit-github-teil-1-github-packages-mit-gradle/
 
 # test
-- version:1
+- version:2
