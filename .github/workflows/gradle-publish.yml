@@ -12,7 +12,7 @@ on:
     types: [created]
   push:
     branches:
-    - main
+    - master
 
 jobs:
   build:
